@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HONOR telefonlari va noutbuklari — zamonaviy texnologiyalar do‘koni.">
+  <title>HONOR Store — Texnologiya sizga yaqin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topline">HONOR texnologiyalari olamiga xush kelibsiz <span>•</span> Yangi kolleksiya bilan tanishing</div>
+  <header class="header">
+    <a class="logo" href="#"><span class="logo-mark">H</span> HONOR<span class="logo-store">STORE</span></a>
+    <nav class="nav">
+      <a href="#phones">Telefonlar</a><a href="#laptops">Noutbuklar</a><a href="#about">Biz haqimizda</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchToggle" aria-label="Qidirish">⌕</button>
+      <button class="cart-btn" id="cartOpen">Savat <span id="cartCount">0</span></button>
+      <button class="menu-btn" id="menuToggle" aria-label="Menyu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> YANGI AVLOD TEXNOLOGIYASI</div>
+        <h1>Kelajakni<br><em>his qiling.</em></h1>
+        <p>Har bir detalda innovatsiya. Kundalik hayotingiz uchun kuchli HONOR smartfonlari va noutbuklari.</p>
+        <div class="hero-buttons"><a class="btn btn-dark" href="#phones">Xarid qilish <span>↗</span></a><a class="text-link" href="#laptops">Kolleksiyani ko‘rish <span>→</span></a></div>
+        <div class="hero-stats"><div><strong>120Hz</strong><small>Silliq ekran</small></div><div><strong>AI</strong><small>Aqlli imkoniyatlar</small></div><div><strong>24/7</strong><small>Yordam xizmati</small></div></div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-glow"></div>
+        <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+        <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=900&q=85" alt="Zamonaviy smartfon" class="hero-phone">
+        <div class="floating-card"><span class="mini-dot"></span><div><b>HONOR Magic Series</b><small>Innovatsiya qo‘lingizda</small></div></div>
+        <div class="hero-number">01<span> / 03</span></div>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div><span class="benefit-icon">✦</span><p><b>Original mahsulotlar</b><small>Sifat va ishonch kafolati</small></p></div>
+      <div><span class="benefit-icon">◈</span><p><b>Qulay to‘lov</b><small>Oson va xavfsiz xarid</small></p></div>
+      <div><span class="benefit-icon">⌁</span><p><b>Tez yetkazib berish</b><small>Buyurtmangiz eshigingizgacha</small></p></div>
+      <div><span class="benefit-icon">♡</span><p><b>Yordam xizmati</b><small>Sizga doim yordam beramiz</small></p></div>
+    </section>
+
+    <section class="catalog section" id="phones">
+      <div class="section-heading"><div><div class="eyebrow dark-eyebrow">BIZNING TANLOV</div><h2>HONOR <em>telefonlari</em></h2></div><a class="view-all" href="#phones">Barchasini ko‘rish ↗</a></div>
+      <div class="filters">
+        <div class="filter-tabs" id="phoneFilters"><button class="active" data-filter="all">Barchasi</button><button data-filter="magic">Magic Series</button><button data-filter="number">Number Series</button><button data-filter="x">X Series</button></div>
+        <label class="sort-label">Saralash <select id="phoneSort"><option value="featured">Tavsiya etilgan</option><option value="low">Arzonidan</option><option value="high">Qimmatidan</option></select></label>
+      </div>
+      <div class="product-grid" id="phoneGrid"></div>
+    </section>
+
+    <section class="feature-banner">
+      <div class="feature-text"><div class="eyebrow">YENGIL. KUCHLI. ZAMONAVIY.</div><h2>Ishingizga<br><em>yangi kuch bering.</em></h2><p>Ijod, ta’lim va kundalik vazifalar uchun yaratilgan HONOR noutbuklari bilan unumdorlikni oshiring.</p><a class="btn btn-light" href="#laptops">Noutbuklarni ko‘rish <span>↗</span></a></div>
+      <div class="laptop-art"><div class="laptop-screen"><div class="screen-logo">HONOR</div><div class="screen-glow"></div></div><div class="laptop-base"></div><div class="laptop-shadow"></div></div>
+      <div class="banner-caption">MAGICBOOK SERIES <span>— PERFORMANCE REDEFINED</span></div>
+    </section>
+
+    <section class="catalog section laptop-section" id="laptops">
+      <div class="section-heading"><div><div class="eyebrow dark-eyebrow">KATTA IMKONIYATLAR</div><h2>HONOR <em>noutbuklari</em></h2></div><p class="heading-note">Har bir vazifa uchun<br>ishonchli hamroh.</p></div>
+      <div class="product-grid" id="laptopGrid"></div>
+    </section>
+
+    <section class="newsletter" id="about"><div><div class="eyebrow">HONOR COMMUNITY</div><h2>Yangiliklardan<br><em>xabardor bo‘ling.</em></h2></div><form id="subscribeForm"><input type="email" placeholder="Email manzilingiz" required><button type="submit">Obuna bo‘lish <span>→</span></button></form></section>
+  </main>
+
+  <footer><a class="logo footer-logo" href="#"><span class="logo-mark">H</span> HONOR<span class="logo-store">STORE</span></a><p>Texnologiya sizga yaqin.</p><div>© 2026 HONOR Store. Norasmiy demo do‘kon.</div></footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer"><div class="drawer-head"><h3>Savatingiz</h3><button id="cartClose" class="close-btn">×</button></div><div id="cartItems" class="cart-items"><p class="empty-cart">Hozircha savatingiz bo‘sh.</p></div><div class="cart-bottom"><div class="total-line"><span>Jami</span><b id="cartTotal">0 so‘m</b></div><button class="checkout-btn" id="checkoutBtn">Buyurtma berish ↗</button></div></aside>
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
